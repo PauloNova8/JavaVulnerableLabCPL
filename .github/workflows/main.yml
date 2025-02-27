@@ -10,8 +10,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Checkmarx One CLI Action
-        uses: checkmarx/ast-github-action@main #Github Action version
-        # uses: Checkmarx/ast-github-action@2.0.23
+        # uses: checkmarx/ast-github-action@main #Github Action version
+        uses: Checkmarx/ast-github-action@2.0.23
         with:
           project_name: ${{ github.repository }}
           cx_tenant: "beta_nova8"
